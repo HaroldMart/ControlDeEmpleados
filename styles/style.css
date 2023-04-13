@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-wrapper {
+  background-color: #16213E;
+}
+
+b {
+  color: #06283D;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  h3 {
+    color: red;
+  }
+}
+.detalles {
+  width: 500px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(217, 214, 214);
+}
+
+.card-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  grid-template-columns: 1fr 1fr;
+}/*# sourceMappingURL=style.css.map */
