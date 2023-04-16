@@ -1,7 +1,7 @@
 <?php
 
 
-require('./template/master.php');
+require('master.php');
 plantilla::aplicar()
 
 ?>
@@ -10,9 +10,9 @@ plantilla::aplicar()
 
 $f = $_GET['f'];
 
-if(file_exists($inside_file_directory .$f)) {
+if(file_exists('data/' .$f)) {
 
-    $json = file_get_contents($inside_file_directory .$f);
+    $json = file_get_contents('data/' .$f);
 
     $dato = json_decode($json, false);
 

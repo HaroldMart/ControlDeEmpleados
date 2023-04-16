@@ -1,6 +1,6 @@
 <?php 
 
-require('./template/master.php');
+require('master.php');
 plantilla::aplicar();
 
 $f = $_GET['f'];
@@ -10,11 +10,11 @@ $f = $_GET['f'];
 if($_POST) {
     $datos = json_encode($_POST);
 
-    if(!is_dir($file_directory)) {
-        mkdir($file_directory);
+    if(!is_dir('data')) {
+        mkdir('data');
     }
 
-    file_put_contents($inside_file_directory .$f,  $datos);
+    file_put_contents('data/' .$f,  $datos);
 }
 
 
@@ -22,7 +22,7 @@ $fila = new stdClass();
 $id = '';
 
 if(isset($_GET['f'])) {
-    $ruta = $inside_file_directory . $_GET['f'];
+    $ruta = 'data/' . $_GET['f'];
 
     if(is_file($ruta)) {
         $tmp = file_get_contents($ruta);

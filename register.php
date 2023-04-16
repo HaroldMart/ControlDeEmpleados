@@ -1,15 +1,15 @@
 <?php 
 
-require('./template/master.php');
+require('master.php');
 
 if($_POST) {
-    if(is_dir($file_directory) === false) {
-        mkdir($file_directory);
+    if(is_dir('data') === false) {
+        mkdir('data');
     }
 
     $json = json_encode($_POST);
 
-    file_put_contents($inside_file_directory .time() .'json', $json);
+    file_put_contents('data/' .time() .'json', $json);
 }
 
 plantilla::aplicar();
@@ -121,7 +121,7 @@ plantilla::aplicar();
                 <button class="waves-effect waves-light btn">Guardar</button>
             </div>
             <div class="col">
-                <a class="btn waves-effect waves-light red lighten-2" href="/index.php">Cancelar</a>
+                <a class="btn waves-effect waves-light red lighten-2" href="index.php">Cancelar</a>
             </div>
         </div>
     </form>

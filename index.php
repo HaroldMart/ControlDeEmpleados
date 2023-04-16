@@ -1,6 +1,6 @@
 <?php 
 
-require('template/master.php');
+require('master.php');
 
 
 if($_POST) {
@@ -47,14 +47,14 @@ plantilla::aplicar();
 
                     echo "
                         <tr>
-                            <td><a href='pages/details.php?f={$archivo}''>{$datos -> name}</a></td>
+                            <td><a href='details.php?f={$archivo}''>{$datos -> name}</a></td>
                             <td>{$datos -> job}</td>
                             <td>{$datos -> salary}</td>
                             <td>{$datos -> department}</td>
                             <td>{$datos -> tel}</td>
                             <td>
-                                <a class='waves-effect waves-light btn' href='functions/edit.php?f={$archivo}'><img src='styles/icons/edit.svg'></img></a>
-                                <a class='btn waves-effect waves-light red lighten-2' href='functions/delete.php?f={$archivo}'>X</a>
+                                <a class='waves-effect waves-light btn' href='edit.php?f={$archivo}'><img src='styles/icons/edit.svg'></img></a>
+                                <a class='btn waves-effect waves-light red lighten-2' href='delete.php?f={$archivo}'>X</a>
                             </td>
                         </tr>
                     ";

@@ -1,6 +1,6 @@
 <?php
 
-require('./template/master.php');
+require('master.php');
 
 plantilla::aplicar()
 
@@ -35,11 +35,11 @@ plantilla::aplicar()
 <script>
         
     <?php 
-        if(is_dir($file_directory)) {
-            $dir = scandir($file_directory);
+        if(is_dir('data')) {
+            $dir = scandir('data');
 
             foreach($dir as $file) {
-                $posible = $inside_file_directory . "{$file}";
+                $posible = 'data/' . "{$file}";
 
                 if(is_file($posible)) {
                     $tmp = file_get_contents($posible);
