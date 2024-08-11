@@ -1,6 +1,5 @@
 <?php
 
-
 require('master.php');
 plantilla::aplicar()
 
@@ -34,8 +33,7 @@ if(file_exists('data/' .$f)) {
     $latitude = $dato -> latitude;
     $longitude = $dato -> longitude;
 }
-
-?>
+?> 
 
 <div class="container detalles">
     <div class="row cont-card">

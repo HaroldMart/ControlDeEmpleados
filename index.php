@@ -23,9 +23,6 @@ plantilla::aplicar();
     }
 </script> 
 
-
-
-
 <table class="striped centered container" style="margin-top:50px; width:100%; ">
     <thead>
         <th>Nombre</th>
@@ -62,5 +59,4 @@ plantilla::aplicar();
             }
         }
     ?>
-
 </table>
